@@ -9,7 +9,6 @@ if (!isset($_GET['id'])) {
 }
 
 // Fetch movie information from the database
-// Prepare the select query and set a placeholder for a movie id 
 $selectQuery = "SELECT movies.id, movies.title, movies.director, movies.year, genres.id AS genre_id, genres.name
   FROM movies
   JOIN genres ON movies.genre = genres.id
